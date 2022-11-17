@@ -5,7 +5,7 @@ import { store } from "../redux/store";
 export function LoginVerify(credential){
     axios({
         method: 'post',
-        url: 'https://music-storeback.vercel.app/loginverified',
+        url: 'https://music-storeback-bp21.vercel.app/loginverified',
         data: {credential:credential}
       })
       .then(ele=>{
