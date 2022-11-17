@@ -15,7 +15,7 @@ export function Pay(price,type,discount,time,log){
                 'Accept': "application/json",
                 "Content-Type": "application/json;charset=UTF-8"
             },
-            url: 'https://music-storeback.vercel.app/payment',
+            url: 'https://music-storeback-bp21.vercel.app/payment',
             data: {
                 price:price,
                 type:type,
