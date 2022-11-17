@@ -6,7 +6,7 @@ export function Subscribed(user){
 
         axios({
             method: 'post',
-            url: 'https://music-storeback.vercel.app/issubscribed',
+            url: 'https://music-storeback-bp21.vercel.app/issubscribed',
             data: {
                 userid : user, 
             }
