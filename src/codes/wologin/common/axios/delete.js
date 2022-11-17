@@ -5,7 +5,7 @@ export function DeleteData(user,playlists){
 
         axios({
             method: 'post',
-            url: 'https://music-storeback.vercel.app/delete',
+            url: 'https://music-storeback-bp21.vercel.app/delete',
             data: {
                 userid : user, 
                 playlist: playlists
