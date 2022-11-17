@@ -8,7 +8,7 @@ export function Pay(price,type,discount,time,log){
             mode: 'cors',
             credentials: 'include',
             headers: {
-                "Access-Control-Allow-Origin": "http:localhost/3000",
+                "Access-Control-Allow-Origin": "https://musicstorebm.netlify.app",
                 "Access-Control-Allow-Credentials": "true",
                 "Access-Control-Allow-Methods": 'HEAD, GET, POST, PUT, DELETE, OPTIONS',
                 "Access-Control-Allow-Headers" : 'Origin,Content-Type,Authorization',
