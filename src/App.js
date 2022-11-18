@@ -78,11 +78,11 @@ function App() {
       <input type="hidden" id="custId" name="custId" value={verified}></input>
       <div style={{'position':'sticky','top':'0px','zIndex':'100'}}>
         <Navbar/>
-      </div>
+      </div> &nbsp;
       <div className='row'>
         <div className='col-lg-7 col-xs-12'>
             <Header  />
-        </div>
+        </div> &nbsp;
         <div className='col-lg-5 col-xs-12'>
           <ChoosePlay  />
           {/* <Playing id='PlayingNow' /> */}
@@ -91,15 +91,15 @@ function App() {
       <div className='row'>
         <div className='col-lg-7 col-xs-12'>
             <Result  />
-        </div>
+        </div> &nbsp;
         <div className='col-lg-5 col-xs-12'>
           <Queuelist  />
         </div>
-      </div>
+      </div> &nbsp;
       {verified==='true'?<div className='row'>
                           <div className='col-lg-7 col-xs-12'>
                             <PlayList />
-                          </div>
+                          </div> &nbsp;
                           <div className='col-lg-5 col-xs-12'>
                             <PreviewPlaylist />
                           </div>
