@@ -76,7 +76,9 @@ function App() {
   return (
     <div>
       <input type="hidden" id="custId" name="custId" value={verified}></input>
-      <Navbar/>
+      <div style={{'position':'sticky','top':'0px','zIndex':'100'}}>
+        <Navbar/>
+      </div>
       <div className='row'>
         <div className='col-lg-7 col-xs-12'>
             <Header  />
