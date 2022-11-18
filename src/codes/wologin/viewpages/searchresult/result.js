@@ -50,7 +50,7 @@ export const Result=()=>{
             </div>
             <div style={{'height': '30em', 'width': '100%', 'overflow': 'scroll'}}>
             <table className="table table-bordered table-hover table-light" >
-                <thead className="table-dark" style={{'position':'sticky','top':'0px'}}>
+                <thead className="table-dark" style={{'position':'sticky','top':'0px','zIndex':'100'}}>
                     <tr>
                         {TableC.map((ele,index)=><th style={{'position':'sticky'}} key={index} scope="col">{ele}</th>)}
                     </tr>
