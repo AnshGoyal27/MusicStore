@@ -63,7 +63,12 @@ export const Result=()=>{
                                 <td>{ele.Track_Name}</td>
                                 <td>{ele.Artist_Name}</td>
                                 <td>{ele.Release_Date}</td>
-                                <td style={{textAlign:'center'}}><button  onClick={()=>addqueue(ele.SongURL,ele.Track_Name,ele.Artist_Name,ele.Artist_Pic)} className='btn btn-dark'>+</button></td>
+                                <td style={{textAlign:'center'}}>
+                                    <div className="btn-group">
+                                        <button  onClick={()=>addqueue(ele.SongURL,ele.Track_Name,ele.Artist_Name,ele.Artist_Pic)} className='btn btn-dark'>+</button> &nbsp;
+                                        <button  onClick={()=>playsong(ele.SongURL,ele.Artist_Pic,ele.Artist_Name)} className='btn btn-dark'><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </td>
                             </tr>
                         )
                     })}
