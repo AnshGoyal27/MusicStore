@@ -82,24 +82,24 @@ function App() {
       <div className='row'>
         <div className='col-lg-7 col-xs-12'>
             <Header  />
-        </div> &nbsp;
+        </div> 
         <div className='col-lg-5 col-xs-12'>
           <ChoosePlay  />
           {/* <Playing id='PlayingNow' /> */}
         </div>
-      </div> &nbsp;
+      </div> 
       <div className='row'>
         <div className='col-lg-7 col-xs-12'>
             <Result  />
-        </div> &nbsp;
+        </div> 
         <div className='col-lg-5 col-xs-12'>
           <Queuelist  />
         </div>
-      </div> &nbsp;
+      </div> 
       {verified==='true'?<div className='row'>
                           <div className='col-lg-7 col-xs-12'>
                             <PlayList />
-                          </div> &nbsp;
+                          </div>
                           <div className='col-lg-5 col-xs-12'>
                             <PreviewPlaylist />
                           </div>
