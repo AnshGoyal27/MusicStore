@@ -84,7 +84,12 @@ export const Queuelist=()=>{
                                             <th scope="row" >{index+1}</th>
                                             <th>{ele.SongName}</th>
                                             <th>{ele.Artist}</th>
-                                            <th style={{textAlign:'center'}} onClick={()=>removeq(ele.SongUrl)}><button className="btn btn-dark">-</button></th>
+                                            <th style={{textAlign:'center'}}>
+                                                <div className="btn-group">
+                                                    <button className="btn btn-dark" onClick={()=>removeq(ele.SongUrl)}>-</button>
+                                                    <button  onClick={()=>playsong(ele.SongURL,ele.ArtistP,ele.Artist)} className='btn btn-dark'><i class="fa-solid fa-play"></i></button>
+                                                </div>
+                                            </th>    
                                             <th>Playing</th>
                                         </tr>
                                     )
@@ -94,7 +99,12 @@ export const Queuelist=()=>{
                                         <th scope="row" >{index+1}</th>
                                         <th>{ele.SongName}</th>
                                         <th>{ele.Artist}</th>
-                                        <th style={{textAlign:'center'}} onClick={()=>removeq(ele.SongUrl)}><button className="btn btn-dark">-</button></th>
+                                        <th style={{textAlign:'center'}}>
+                                            <div className="btn-group">
+                                                <button className="btn btn-dark" onClick={()=>removeq(ele.SongUrl)}>-</button> &nbsp;
+                                                <button  onClick={()=>playsong(ele.SongURL,ele.ArtistP,ele.Artist)} className='btn btn-dark'><i class="fa-solid fa-play"></i></button>
+                                            </div>
+                                        </th>    
                                         <th></th>
                                     </tr>
                                 )
